@@ -28,7 +28,7 @@ builder.Services.AddScoped<IContribuinteService, ContribuinteService>();
 builder.Services.AddScoped<IPedidoService, PedidoService>();
 
 builder.Services.AddCors(o => o.AddPolicy("portal", p =>
-    p.WithOrigins("http://localhost:5173")
+    p.WithOrigins("*")
      .AllowAnyHeader()
      .AllowAnyMethod()));
 
